@@ -74,95 +74,32 @@ body{
     object-fit: cover;
 }
 
-.menu-page1{
+.main{
     position: fixed;
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     background-color: #fff;
-    margin-top: 1100px;
-    transition: 0.5s;
+    z-index: 3;
+    top: 100%;
+    transition: all 0.5s;
 }
-.menu-page1.active{
+.main.active{
     position: fixed;
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     background-color: #fff;
-    margin-top: 100px;
+    z-index: 3;
+    top: 0px;
 }
-.menu-page2{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 1100px;
-    transition: 0.5s;
-}
-.menu-page2.active{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 100px;
-}
-.menu-page3{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 1100px;
-    transition: 0.5s;
-}
-.menu-page3.active{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 100px;
-}
-.menu-page4{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 1100px;
-    transition: 0.5s;
-}
-.menu-page4.active{
-    position: fixed;
-    width: 100%;
-    height: calc(100% - 100px);
-    background-color: #fff;
-    margin-top: 100px;
-}
-.close-btn1{
+.close{
     position: absolute;
     width: 100px;
     height: 50px;
     left: 50%;
     margin-left: -50px;
-    background-color: red;
-}
-.close-btn2{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 50%;
-    margin-left: -50px;
-    background-color: red;
-}
-.close-btn3{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 50%;
-    margin-left: -50px;
-    background-color: red;
-}
-.close-btn4{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 50%;
-    margin-left: -50px;
-    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid red;
 }
