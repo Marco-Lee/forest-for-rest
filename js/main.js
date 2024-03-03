@@ -1,30 +1,10 @@
 $(document).ready(function(){
-    $(".main1").on("click",function(){
-        $(".menu-page1").addClass("active");
-    })
-    $(".close-btn1").on("click",function(){
-        $(".menu-page1").removeClass("active");
-    })
-
-    $(".main2").on("click",function(){
-        $(".menu-page2").addClass("active");
-    })
-    $(".close-btn2").on("click",function(){
-        $(".menu-page2").removeClass("active");
-    })
-
-    $(".main3").on("click",function(){
-        $(".menu-page3").addClass("active");
-    })
-    $(".close-btn3").on("click",function(){
-        $(".menu-page3").removeClass("active");
-    })
-
-    $(".main4").on("click",function(){
-        $(".menu-page4").addClass("active");
-    })
-    $(".close-btn4").on("click",function(){
-        $(".menu-page4").removeClass("active");
-    })
-
+    $(".navi>li>a").on("mouseenter",function(){
+        $(".top").css({"background-color":"#fff"});
+        $(".navi>li>a").css({"color":"#000"});
+    });
+    $(".top").on("mouseout",function(){
+        $(".top").css({"background-color":"transparent"});
+        $(".navi>li>a").css({"color":"#fff"});
+    });
 });

@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 *{
     margin: 0px;
@@ -22,46 +23,60 @@ body{
     position: fixed;
     float: left;
     width: 100%;
-    height: 100px;
-    border-bottom: 1px solid #fff;
-
+    height: 120px;
     z-index: 3;
+    transition: all 0.5s;
 }
 .logo{
     float: left;
     width: 200px;
-    height: 100px;
+    height: 120px;
     text-align: center;
-    line-height: 100px;
+    line-height: 120px;
     font-size: 20px;
     color: #fff;
 }
 .menu{
-    float: right;
+    position: absolute;
     width: 800px;
-    height: 100px;
-    top: 0px;
-    right: 100px;
+    height: 120px;
+    left: 50%;
+    margin-left: -400px;
 }
 .navi>li{
     float: left;
 }
 .navi>li>a{
-    width: 150px;
+    width: 100px;
     height: 50px;
-    margin-top: 25px;
-    margin-left: 40px;
+    margin-top: 35px;
+    margin-left: 80px;
+    margin-bottom: 35px;
     text-align: center;
     line-height: 50px;
-    font-size: 25px;
+    font-family: "Nanum Gothic";
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
-    
+
     transition: all 0.5s;
 }
-.navi>li>a:hover{
-    transform: scale(1.2);
+.submenu{
+    height: 200px;
 }
+.submenu>li>a{
+    width: 100px;
+    height: 50px;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Nanum Gothic";
+    font-size: 16px;
+}
+.submenu>li>a:hover{
+    font-weight: bold;
+}
+
 
 .bg-video{
     position: fixed;
@@ -72,34 +87,4 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.main{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 3;
-    top: 100%;
-    transition: all 0.5s;
-}
-.main.active{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 3;
-    top: 0px;
-}
-.close{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 50%;
-    margin-left: -50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    border: 1px solid red;
 }
